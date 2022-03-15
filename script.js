@@ -20,8 +20,23 @@ let celleTotali = colonne * righe
 
 // 4.CICLO per ogni cella della griglia
 for (let i = 0; i < celleTotali; i++) {
-    // creo cella
-    const cella = document.createElement('div');
-    cella.classList.add('cella');
+    // creo la cella usando la funzione creata sotto
+    const cella = creoCella();
+    // aggiungo .cella nella griglia
     griglia.appendChild(cella)
+}
+
+
+
+
+
+
+
+
+
+// creo una cella tramite funzione
+function creoCella() {
+    const item = document.createElement('div');
+    item.classList.add('cella');
+    return item;
 }
