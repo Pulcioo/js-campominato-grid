@@ -19,21 +19,20 @@ let righe = 10
 let celleTotali = colonne * righe
 
 // 4.CICLO per ogni cella della griglia
-for (let i = 0; i < celleTotali; i++) {
+for (let i = 1; i < celleTotali + 1; i++) {
     // creo la cella usando la funzione creata sotto
     const cella = creoCella();
     // aggiungo .cella nella griglia
     griglia.appendChild(cella)
+    // inserisco numeri da 1 a 100 all'interno delle celle
+    cella.innerText = i
+    cella.addEventListener('click', function (event) {
+        cella.classList.add("bg_blue")
+    })
 }
 
 
-
-
-
-
-
-
-
+/////// FUNZIONE //////
 // creo una cella tramite funzione
 function creoCella() {
     const item = document.createElement('div');

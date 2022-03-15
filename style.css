@@ -19,4 +19,16 @@ body {
   height: 500px;
   background-color: cornflowerblue;
   margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cella{
+  width: calc(500px / 10);
+  height: calc(500px / 10);
+  border: 1px solid black;
+}
+
+.bg_blue{
+  background-color: blue;
 }
