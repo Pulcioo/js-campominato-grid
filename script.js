@@ -27,10 +27,9 @@ for (let i = 1; i < celleTotali + 1; i++) {
     // inserisco numeri da 1 a 100 all'interno delle celle
     cella.innerText = i
     cella.addEventListener('click', function (event) {
-        cella.classList.add("bg_blue")
+        cella.classList.add('bg_blue')
     })
 }
-
 
 /////// FUNZIONE //////
 // creo una cella tramite funzione
