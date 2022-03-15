@@ -1,15 +1,22 @@
-/* generics */
+/****** GENERICS ******/
 
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-  }
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
   
-  body {
-    font-family: sans-serif;
-  }
+body {
+  font-family: sans-serif;
+}
   
-  /* utilities */
+/****** UTILITIES ******/
   
-  /* content */
+/****** CONTENT ******/
+/* creo una griglia di gioco  */
+#griglia{
+  width: 500px;
+  height: 500px;
+  background-color: cornflowerblue;
+  margin: 50px auto;
+}
